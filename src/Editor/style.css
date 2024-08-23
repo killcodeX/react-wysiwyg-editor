@@ -1,0 +1,11 @@
+.react-classic-wysiwyg-editor-toolbar-main-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  /* box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.0588235294); */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

@@ -1,0 +1,5 @@
+.react-classic-wysiwyg-editor-separator {
+  height: 18px;
+  width: 0.1em;
+  background-color: var(--baseFg);
+}
