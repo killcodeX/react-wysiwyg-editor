@@ -15,7 +15,7 @@ interface SelectComponentProps {
 
 const SelectComponent: React.FC<SelectComponentProps> = ({
   selectedValue,
-  setSelectedValue,
+  //setSelectedValue,
   options,
 }: any) => {
   const selectRef = useRef<HTMLDivElement>(null);

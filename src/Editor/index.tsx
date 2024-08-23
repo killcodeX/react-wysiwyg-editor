@@ -1,7 +1,7 @@
 // src/Editor.tsx
 
-import React, { useRef, useState, useEffect } from "react";
-import SelectComponent from "../components/select";
+import React, { useRef, useEffect } from "react";
+// import SelectComponent from "../components/select";
 import Separator from "../components/separator";
 import ButtonComponent from "../components/buttons";
 import {
@@ -20,7 +20,7 @@ interface EditorProps {
 
 export const Editor: React.FC<EditorProps> = ({ setContent }) => {
   const editorRef = useRef<HTMLDivElement>(null);
-  const [currTextType, setCurrTextType] = useState<string>("para");
+  // const [currTextType, setCurrTextType] = useState<string>("para");
 
   const applyStyle = (style: string) => {
     const selection = window.getSelection();
