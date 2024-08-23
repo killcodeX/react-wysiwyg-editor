@@ -6,7 +6,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import { terser } from "rollup-plugin-terser";
 
 export default {
-  input: "src/Editor.tsx", // Entry point
+  input: "src/Editor/index.tsx", // Entry point
   output: [
     {
       file: "dist/index.js", // CommonJS output

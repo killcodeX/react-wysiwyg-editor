@@ -13,7 +13,7 @@ npm install react-classic-wysiwyg-editor
 ## Usage
 
 ```jsx
-import React from 'react'
+import { useState } from 'react'
 import { Editor } from 'react-classic-wysiwyg-editor'
 
 const Example = () => {
