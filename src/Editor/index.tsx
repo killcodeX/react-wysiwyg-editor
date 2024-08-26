@@ -2,8 +2,8 @@
 
 import React, { useRef, useEffect } from "react";
 // import SelectComponent from "../components/select";
-import Separator from "../components/separator";
-import ButtonComponent from "../components/buttons";
+import Separator from "../Components/separator";
+import ButtonComponent from "../Components/buttons";
 import {
   LuBold,
   LuUnderline,
@@ -12,6 +12,7 @@ import {
   LuAlignJustify,
   LuAlignRight,
 } from "react-icons/lu";
+import { applyStyle } from "../Utils/styleLogic";
 import "./style.css";
 
 interface EditorProps {
@@ -22,26 +23,6 @@ interface EditorProps {
 export const Editor: React.FC<EditorProps> = ({ setContent, inputStyles }) => {
   const editorRef = useRef<HTMLDivElement>(null);
   // const [currTextType, setCurrTextType] = useState<string>("para");
-
-  const applyStyle = (style: string) => {
-    const selection = window.getSelection();
-    if (!selection || selection.rangeCount === 0) return;
-
-    const range = selection.getRangeAt(0);
-    const span = document.createElement("span");
-    span.style.cssText = style;
-    range.surroundContents(span);
-    // Deselect the text after applying the style
-    selection.removeAllRanges();
-  };
-
-  const handleBold = () => applyStyle("font-weight: bold;");
-  const handleItalic = () => applyStyle("font-style: italic;");
-  const handleUnderline = () => applyStyle("text-decoration: underline;");
-
-  const handleLeftAlign = () => applyStyle("text-align: left;");
-  const handleJustify = () => applyStyle("text-align: justify;");
-  const handleRightAlign = () => applyStyle("text-align: right;");
 
   useEffect(() => {
     const handleInput = () => {
@@ -67,42 +48,51 @@ export const Editor: React.FC<EditorProps> = ({ setContent, inputStyles }) => {
   return (
     <div className="react-classic-wysiwyg-editor-container">
       <div className="react-classic-wysiwyg-editor-toolbar-main-container">
-        {/* <SelectComponent
-          selectedValue={{ label: "Paragraph", value: "paragraph" }}
-          //setSelectedValue={setSelectedValue}
-          options={[
-            {
-              label: "H1",
-              value: "h1",
-            },
-            {
-              label: "H2",
-              value: "h2",
-            },
-            {
-              label: "H3",
-              value: "h3",
-            },
-            { label: "Paragraph", value: "paragraph" },
-          ]}
-        /> */}
-        <ButtonComponent onClick={handleBold}>
+        <ButtonComponent
+          onClick={() =>
+            applyStyle({ style: "font-weight: bold;", editorRef, setContent })
+          }
+        >
           <LuBold />
         </ButtonComponent>
-        <ButtonComponent onClick={handleItalic}>
+        <ButtonComponent
+          onClick={() =>
+            applyStyle({ style: "font-style: italic;", editorRef, setContent })
+          }
+        >
           <LuItalic />
         </ButtonComponent>
-        <ButtonComponent onClick={handleUnderline}>
+        <ButtonComponent
+          onClick={() =>
+            applyStyle({
+              style: "text-decoration: underline;",
+              editorRef,
+              setContent,
+            })
+          }
+        >
           <LuUnderline />
         </ButtonComponent>
         <Separator />
-        <ButtonComponent onClick={handleLeftAlign}>
+        <ButtonComponent
+          onClick={() =>
+            applyStyle({ style: "text-align: left;", editorRef, setContent })
+          }
+        >
           <LuAlignLeft />
         </ButtonComponent>
-        <ButtonComponent onClick={handleJustify}>
+        <ButtonComponent
+          onClick={() =>
+            applyStyle({ style: "text-align: justify;", editorRef, setContent })
+          }
+        >
           <LuAlignJustify />
         </ButtonComponent>
-        <ButtonComponent onClick={handleRightAlign}>
+        <ButtonComponent
+          onClick={() =>
+            applyStyle({ style: "text-align: right;", editorRef, setContent })
+          }
+        >
           <LuAlignRight />
         </ButtonComponent>
       </div>
@@ -120,3 +110,25 @@ export const Editor: React.FC<EditorProps> = ({ setContent, inputStyles }) => {
     </div>
   );
 };
+
+{
+  /* <SelectComponent
+          selectedValue={{ label: "Paragraph", value: "paragraph" }}
+          //setSelectedValue={setSelectedValue}
+          options={[
+            {
+              label: "H1",
+              value: "h1",
+            },
+            {
+              label: "H2",
+              value: "h2",
+            },
+            {
+              label: "H3",
+              value: "h3",
+            },
+            { label: "Paragraph", value: "paragraph" },
+          ]}
+        /> */
+}
