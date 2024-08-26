@@ -1,6 +1,6 @@
 {
   "name": "react-classic-wysiwyg-editor",
-  "version": "1.0.4-alpha",
+  "version": "1.0.5-alpha",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
