@@ -16,9 +16,10 @@ import "./style.css";
 
 interface EditorProps {
   setContent: (value: string) => void;
+  inputStyles?: object;
 }
 
-export const Editor: React.FC<EditorProps> = ({ setContent }) => {
+export const Editor: React.FC<EditorProps> = ({ setContent, inputStyles }) => {
   const editorRef = useRef<HTMLDivElement>(null);
   // const [currTextType, setCurrTextType] = useState<string>("para");
 
@@ -46,7 +47,6 @@ export const Editor: React.FC<EditorProps> = ({ setContent }) => {
     const handleInput = () => {
       if (editorRef.current) {
         const content = editorRef.current.innerHTML;
-        console.log(content);
         setContent(content); // Use optional chaining
       }
     };
@@ -65,7 +65,7 @@ export const Editor: React.FC<EditorProps> = ({ setContent }) => {
   }, [setContent]); // Only include setContent in the dependency array
 
   return (
-    <div>
+    <div className="react-classic-wysiwyg-editor-container">
       <div className="react-classic-wysiwyg-editor-toolbar-main-container">
         {/* <SelectComponent
           selectedValue={{ label: "Paragraph", value: "paragraph" }}
@@ -114,6 +114,7 @@ export const Editor: React.FC<EditorProps> = ({ setContent }) => {
           border: "1px solid #ccc",
           padding: "10px",
           minHeight: "300px",
+          ...inputStyles,
         }}
       ></div>
     </div>

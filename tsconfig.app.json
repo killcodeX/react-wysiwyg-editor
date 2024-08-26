@@ -8,17 +8,18 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
     "jsx": "react-jsx",
+    "noEmit": true,  // This option is set to true
+    "allowImportingTsExtensions": true,
 
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true // Optional: for easier module interop
   },
-  "include": ["src", "rollup.config.js"]
+  "include": ["src", "rollup.config.js", "tests"] // Include other directories as needed
 }
