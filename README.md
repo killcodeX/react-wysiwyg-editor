@@ -4,6 +4,8 @@
 
 This is a simple classic wysiwyg (What-You-See-Is-What-You-Get) editor for react.
 
+![react-classic-wysiwyg-editor](https://github.com/killcodeX/react-wysiwyg-editor/blob/main/src/assets/demo-img1.png)
+
 ## Install
 
 ```bash
@@ -31,6 +33,8 @@ const Example = () => {
 ```
 
 ## Live Playground
+
+For examples of the `react-classic-wysiwyg-editor` in action, go to [demo](https://react-classic-wysiwyg-editor.netlify.app)
 
 OR
 
