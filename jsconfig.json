@@ -5,6 +5,7 @@
         "$assets": ["assets"],
         "$comp": ["comp"],
         "$editor": ["editor"],
+        "$utils":["utils"]
       }
     },
     "include": ["src/**/*.ts"],
