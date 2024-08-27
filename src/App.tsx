@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Editor } from "./Editor";
+import React, { useState } from "react";
+import { Editor } from "./editor";
 import "./App.css";
 
 function App() {
