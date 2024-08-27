@@ -12,7 +12,7 @@ import {
   LuAlignJustify,
   LuAlignRight,
 } from "react-icons/lu";
-import { applyStyle } from "../utils/styleLogic";
+import { applyStyle } from "../what/styleLogic";
 import "./style.css";
 
 interface EditorProps {
