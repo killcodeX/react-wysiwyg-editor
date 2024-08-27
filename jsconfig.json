@@ -2,11 +2,11 @@
     "compilerOptions": {
       "baseUrl": "src",
       "paths": {
-        "$Assets": ["Assets"],
-        "$Components": ["Components"],
-        "$Editor": ["Editor"],
+        "$assets": ["assets"],
+        "$comp": ["comp"],
+        "$editor": ["editor"],
       }
     },
-    "include": ["src/**/*.js"],
+    "include": ["src/**/*.ts"],
     "exclude": ["node_modules", "**/node_modules", "dist"]
   }

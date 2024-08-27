@@ -2,8 +2,8 @@
 
 import React, { useRef, useEffect } from "react";
 // import SelectComponent from "../components/select";
-import Separator from "../Components/Separator";
-import ButtonComponent from "../Components/Buttons";
+import Separator from "../comp/separator";
+import ButtonComponent from "../comp/buttonComp";
 import {
   LuBold,
   LuUnderline,
@@ -12,7 +12,7 @@ import {
   LuAlignJustify,
   LuAlignRight,
 } from "react-icons/lu";
-import { applyStyle } from "../Utils/styleLogic";
+import { applyStyle } from "../utils/styleLogic";
 import "./style.css";
 
 interface EditorProps {
