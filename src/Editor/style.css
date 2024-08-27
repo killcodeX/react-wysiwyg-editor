@@ -1,14 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap");
 
-:root {
-  --fontFamily: "Moderustic", sans-serif;
-  --bRadius: 8px;
-  --mainFontColor: #1d1d1d;
-  --baseFg: #f2f2f3;
-  --baseBg: white;
-  --accentFg: #006fc2;
-  --accentBg: #bae1ff;
-}
 
 .react-classic-wysiwyg-editor-toolbar-main-container {
   display: flex;
