@@ -8,7 +8,7 @@ import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss"; // Import the PostCSS plugin
 
 export default {
-  input: "src/editor/index.tsx",
+  input: "src/entry.ts",
   output: [
     {
       file: "dist/index.js",
