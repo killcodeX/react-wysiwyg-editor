@@ -2,8 +2,8 @@
 
 import React, { useRef, useEffect } from "react";
 // import SelectComponent from "../components/select";
-import Separator from "../Components/Separator";
-import ButtonComponent from "../Components/Buttons";
+import Separator from "../Components/Separator/index.tsx";
+import ButtonComponent from "../Components/Buttons/index.tsx";
 import {
   LuBold,
   LuUnderline,
