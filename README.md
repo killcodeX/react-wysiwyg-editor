@@ -15,6 +15,7 @@ npm install react-classic-wysiwyg-editor
 ```jsx
 import { useState } from 'react'
 import { Editor } from 'react-classic-wysiwyg-editor'
+import 'react-classic-wysiwyg-editor/dist/index.css'
 
 const Example = () => {
   const [content, setContent] = useState('')
@@ -29,10 +30,12 @@ const Example = () => {
 }
 ```
 
-## License
+## Live Playground
 
-MIT © [](https://github.com/)
+OR
 
-## Keywords
+To run that demo on your own computer:
 
-react wysiwyg editor
+- npm install react-classic-wysiwyg-editor
+- npm start
+- Visit http://localhost:3000/

@@ -2,8 +2,8 @@
 
 import React, { useRef, useEffect } from "react";
 // import SelectComponent from "../components/select";
-import Separator from "../Components/Separator/index.tsx";
-import ButtonComponent from "../Components/Buttons/index.tsx";
+import Separator from "../Components/Separator";
+import ButtonComponent from "../Components/Buttons";
 import {
   LuBold,
   LuUnderline,
@@ -132,3 +132,5 @@ export const Editor: React.FC<EditorProps> = ({ setContent, inputStyles }) => {
           ]}
         /> */
 }
+
+//For examples of the `react-classic-wysiwyg-editor` in action, go to http://airbnb.io/react-dates.

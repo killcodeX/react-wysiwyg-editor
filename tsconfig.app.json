@@ -21,5 +21,5 @@
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true // Optional: for easier module interop
   },
-  "include": ["src", "rollup.config.js", "tests"] // Include other directories as needed
+  "include": ["src", "rollup.config.js", "tests", "jsconfig.json"] // Include other directories as needed
 }

@@ -25,10 +25,10 @@ export default {
   ],
   plugins: [
     peerDepsExternal(),
-    // postcss({
-    //   // Add this line to handle CSS imports
-    //   extract: true, // Extract CSS to a separate file
-    // }),
+    postcss({
+      // Add this line to handle CSS imports
+      extract: true, // Extract CSS to a separate file
+    }),
     typescript({
       tsconfig: "tsconfig.app.json",
       module: "esnext",

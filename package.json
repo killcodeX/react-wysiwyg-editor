@@ -1,6 +1,9 @@
 {
   "name": "react-classic-wysiwyg-editor",
-  "version": "1.0.6-alpha",
+  "version": "1.0.8-alpha",
+  "description": "This is a simple classic wysiwyg (What-You-See-Is-What-You-Get) editor for react.",
+  "author": "Aaquib Ahmed <aaquibskimbox@gmail.com> (https://aaquib.netlify.app/)",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -8,6 +11,18 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "react",
+    "wysiwyg",
+    "editor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killcodeX/react-wysiwyg-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/killcodeX/react-wysiwyg-editor/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
